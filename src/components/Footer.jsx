@@ -11,7 +11,7 @@ import imgDevTo from "../../src/assets/images/logo-dev.svg";
 
 function Footer() {
   return (
-    <footer className="py-4 fixed-bottom">
+    <footer className="py-4">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center">
           <a
@@ -20,11 +20,12 @@ function Footer() {
             rel="noopener noreferrer"
             className="mx-3"
           >
-            <img 
-              className="img-fluid" 
-              src={imgGitHub} 
-              alt="GitHub Logo" 
-              style={{ width: "40px" }} />
+            <img
+              className="img-fluid"
+              src={imgGitHub}
+              alt="GitHub Logo"
+              style={{ width: "40px" }}
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/clinton-jones/"
@@ -32,10 +33,11 @@ function Footer() {
             rel="noopener noreferrer"
             className="mx-3"
           >
-            <img 
-              className="img-fluid" 
-              src={imgLinkedIn} alt="LinkedIn Logo" 
-              style={{ width: "40px" }} 
+            <img
+              className="img-fluid"
+              src={imgLinkedIn}
+              alt="LinkedIn Logo"
+              style={{ width: "40px" }}
             />
           </a>
           <a
