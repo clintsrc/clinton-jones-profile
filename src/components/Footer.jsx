@@ -7,7 +7,7 @@
 
 import imgGitHub from "../../src/assets/images/logo-github.svg";
 import imgLinkedIn from "../../src/assets/images/logo-linkedin.png";
-import imgStackOverflow from "../../src/assets/images/logo-stackoverflow.svg";
+import imgDevTo from "../../src/assets/images/logo-dev.svg";
 
 function Footer() {
   return (
@@ -38,17 +38,16 @@ function Footer() {
               style={{ width: "40px" }} 
             />
           </a>
-          {/* Logo 3 */}
           <a
-            href="https://stackoverflow.com"
+            href="https://dev.to/cajones"
             className="mx-3"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
               className="img-fluid"
-              src={imgStackOverflow}
-              alt="Stack Overflow Logo"
+              src={imgDevTo}
+              alt="Dev Logo"
               style={{ width: "40px" }}
             />
           </a>

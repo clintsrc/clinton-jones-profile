@@ -1,9 +1,15 @@
 export default function Resume() {
-  
+  const urlResume = "https://docs.google.com/document/d/1Eyu1A20_3BPIj51mwFGoNbK1EBCttq3n/preview";
+
   return (
     <div>
       <h1>Resume</h1>
-      <p>Download my resume</p>
+      <p>Download my <a
+        href={urlResume}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="img-fluid"
+      >resume</a></p>
 
       <h3>Front-end Proficiencies</h3>
       <ul>
