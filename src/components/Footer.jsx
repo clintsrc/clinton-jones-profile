@@ -3,13 +3,15 @@
  *   (unlike images referenced in public/assets)
  */
 
+// TODO: move styling to css, reconsider the 3rdparty icon - is it worth it?
+
 import imgGitHub from "../../src/assets/images/logo-github.svg";
 import imgLinkedIn from "../../src/assets/images/logo-linkedin.png";
 import imgStackOverflow from "../../src/assets/images/logo-stackoverflow.svg";
 
 function Footer() {
   return (
-    <footer className="py-4">
+    <footer className="py-4 fixed-bottom">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center">
           <a
@@ -18,7 +20,11 @@ function Footer() {
             rel="noopener noreferrer"
             className="mx-3"
           >
-            <img src={imgGitHub} alt="GitHub Logo" width="50" height="50" />
+            <img 
+              className="img-fluid" 
+              src={imgGitHub} 
+              alt="GitHub Logo" 
+              style={{ width: "40px" }} />
           </a>
           <a
             href="https://www.linkedin.com/in/clinton-jones/"
@@ -26,7 +32,11 @@ function Footer() {
             rel="noopener noreferrer"
             className="mx-3"
           >
-            <img src={imgLinkedIn} alt="LinkedIn Logo" width="50" height="50" />
+            <img 
+              className="img-fluid" 
+              src={imgLinkedIn} alt="LinkedIn Logo" 
+              style={{ width: "40px" }} 
+            />
           </a>
           {/* Logo 3 */}
           <a
@@ -36,10 +46,10 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <img
+              className="img-fluid"
               src={imgStackOverflow}
               alt="Stack Overflow Logo"
-              width="50"
-              height="50"
+              style={{ width: "40px" }}
             />
           </a>
         </div>

@@ -27,5 +27,43 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #4d9ef5;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* TODO */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3a8ee7;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+.error-message {
+  color: #dd0303f6;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.success-message {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Submission Messages */
+.submitted-text {
+  font-size: 2rem;
+  margin-top: 5px;
 }

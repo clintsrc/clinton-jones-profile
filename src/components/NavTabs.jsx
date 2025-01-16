@@ -20,7 +20,7 @@ function NavTabs() {
                 : "nav-link"
             }
           >
-            About
+            About me
           </Link>
         </li>
         <li className="nav-item">
