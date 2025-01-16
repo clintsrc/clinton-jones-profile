@@ -1,14 +1,18 @@
 export default function About() {
+  
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About me</h1>
+      <p>Thanks for visiting my site! Allow me to tell introduce myself.</p>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        I&apos;m a motivated web developer with a strong foundation in full-stack
+        development, Python programming, and automation. Skilled in building
+        dynamic web applications using JavaScript (React.js), Node.js, Express,
+        and REST APIs, and other modern web technologies. Experienced in
+        leveraging cloud platforms and CI/CD pipelines to enhance web
+        development workflows. Adept at debugging, problem-solving, and
+        collaborating with cross-functional teams to create user-focused
+        experiences.
       </p>
     </div>
   );
