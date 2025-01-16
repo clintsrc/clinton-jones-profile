@@ -55,17 +55,6 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="text-center pt-5">
-        <a
-          className="small text-muted mb-0"
-          href="https://www.flaticon.com/free-icons/consultation"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="consultation icons"
-        >
-          Consultation icons created by muh zakaria - Flaticon
-        </a>
-      </div>
     </footer>
   );
 }

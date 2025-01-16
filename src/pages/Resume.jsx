@@ -1,15 +1,21 @@
 export default function Resume() {
-  const urlResume = "https://docs.google.com/document/d/1Eyu1A20_3BPIj51mwFGoNbK1EBCttq3n/preview";
+  const urlResume =
+    "https://docs.google.com/document/d/1Eyu1A20_3BPIj51mwFGoNbK1EBCttq3n/preview";
 
   return (
     <div>
       <h1>Resume</h1>
-      <p>Download my <a
-        href={urlResume}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="img-fluid"
-      >resume</a></p>
+      <p>
+        Download my{" "}
+        <a
+          href={urlResume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="img-fluid"
+        >
+          resume
+        </a>
+      </p>
 
       <h3>Front-end Proficiencies</h3>
       <ul>
@@ -29,6 +35,31 @@ export default function Resume() {
         <li>Express</li>
         <li>PostgreSQL</li>
       </ul>
+      <p>
+        Resources: <a
+          className="text-muted small"
+          href="https://www.svgrepo.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          SVG Repo
+        </a>, <a
+          className="text-muted small"
+          href="https://www.netlify.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>, <a
+          className="text-muted small"
+          href="https://coolors.co/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Coolers
+        </a>
+        
+      </p>
     </div>
   );
 }
