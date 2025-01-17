@@ -36,7 +36,7 @@ export default function Resume() {
         <li>PostgreSQL</li>
       </ul>
       <p>
-        Resources: <a
+        Resources: Francisco Rivera, <a
           className="text-muted small"
           href="https://www.svgrepo.com"
           target="_blank"

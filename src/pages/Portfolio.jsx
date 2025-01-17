@@ -11,19 +11,19 @@ export default function Portfolio() {
     <div>
       <h1>Portfolio Page</h1>
 
-      <div className="flex-container">
-        <div className="item1 flex-item">
+      
+      <div className="row row-cols-1 row-cols-md-2 g-4">
+      <div className="col">
+        <div className="card">
           <a
             href="https://clintsrc.github.io/nerd-trivia/"
             alt="Nerd Trivia App"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <img className="card-img-top"
               src={imgNerdTrivia}
               alt="Nerd Trivia Tile"
-              width="50"
-              height="50"
             />
           </a>
           <a
@@ -35,6 +35,8 @@ export default function Portfolio() {
             Nerd Trivia
           </a>
         </div>
+        </div>
+
 
         <div className="item1 flex-item">
           <a alt="Portfolio App" href="https://clintonjones.netlify.app/">
@@ -70,6 +72,7 @@ export default function Portfolio() {
             />{" "}
           </a>
           <a
+          className={""}
             href="https://github.com/clintsrc/WeatherOrNot"
             alt="Weather Or Not GitHub"
             target="_blank"
