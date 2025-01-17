@@ -63,7 +63,7 @@ export default function Contact() {
           value.length < MIN_MESSAGE_LEN ||
           value.length > MAX_MESSAGE_LEN
         ) {
-          return `Your message needs to be at least ${MIN_MESSAGE_LEN} characters long, don't be shy!`;
+          return `Your message needs to be at least ${MIN_MESSAGE_LEN} characters long, please!`;
         }
         break;
       default:
