@@ -1,3 +1,7 @@
+.contact {
+  flex: 1;
+}
+
 /* styles.css */
 .contact-label {
   font-weight: bold;

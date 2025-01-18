@@ -183,8 +183,8 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="contact">
+      <h2 className="mt-3">Contact</h2>
       <form onSubmit={handleFormSubmit}>
         <label className="contact-label">
           Name:

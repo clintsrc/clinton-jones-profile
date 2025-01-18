@@ -17,8 +17,7 @@ import "../assets/css/Portfolio.css";
 export default function Portfolio() {
   return (
     <div>
-      <h1>Portfolio Page</h1>
-
+      <h2 className="mt-3">Portfolio</h2>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         <div className="col">
           <div className="card">

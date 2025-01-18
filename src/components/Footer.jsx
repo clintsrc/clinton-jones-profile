@@ -3,15 +3,13 @@
  *   (unlike images referenced in public/assets)
  */
 
-// TODO: move styling to css, reconsider the 3rdparty icon - is it worth it?
-
 import imgGitHub from "../../src/assets/images/logo-github.svg";
 import imgLinkedIn from "../../src/assets/images/logo-linkedin.png";
 import imgDevTo from "../../src/assets/images/logo-dev.svg";
 
 function Footer() {
   return (
-    <footer className="py-4">
+    <footer className="py-3">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center">
           <a

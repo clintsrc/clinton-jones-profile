@@ -4,8 +4,9 @@ export default function About() {
 
   return (
     <div>
-      <h1>About me</h1>
-      <div>
+      <h2 className="mt-3">About me</h2>
+      
+      <div className="mt-3">
         <img
           className="img-fluid rounded-circle"
           src={urlProfileImage}

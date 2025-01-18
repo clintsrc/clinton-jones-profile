@@ -4,53 +4,57 @@ export default function Resume() {
 
   return (
     <div>
-      <h1>Resume</h1>
-      <p>
-        Download my{" "}
+      <h2 className="mt-3">Resume</h2>
+      <h3 className="resume-caption mt-3">Front-end Proficiencies</h3>
+      <ul className="list-group list-group-striped">
+        <li className="list-group-item">HTML</li>
+        <li className="list-group-item">CSS Layouts (Flexbox)</li>
+        <li className="list-group-item">JavasScript</li>
+        <li className="list-group-item">TypeScript</li>
+        <li className="list-group-item">Resonsive Design</li>
+        <li className="list-group-item">React</li>
+        <li className="list-group-item">Cross-Browser testing</li>
+      </ul>
+
+      <h3 className="resume-caption mt-3">Back-end Proficiencies</h3>
+      <ul className="list-group list-group-striped">
+        <li className="list-group-item">REST APIs</li>
+        <li className="list-group-item">Node</li>
+        <li className="list-group-item">Express</li>
+        <li className="list-group-item">PostgreSQL</li>
+      </ul>
+      <div className="d-grid gap-2 col-3 mx-auto pt-5">
         <a
+          className="btn btn-primary"
           href={urlResume}
           target="_blank"
           rel="noopener noreferrer"
-          className="img-fluid"
         >
-          resume
+          Download
         </a>
-      </p>
-
-      <h3>Front-end Proficiencies</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS Layouts (Flexbox)</li>
-        <li>JavasScript</li>
-        <li>TypeScript</li>
-        <li>Resonsive Design</li>
-        <li>React</li>
-        <li>Cross-Browser testing</li>
-      </ul>
-
-      <h3>Back-end Proficiencies</h3>
-      <ul>
-        <li>REST APIs</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-      </ul>
+      </div>
       <p>
-        Resources: Francisco Rivera, <a
+        {/* TODO: move to readme */}
+        Resources: Francisco Rivera,{" "}
+        <a
           className="text-muted small"
           href="https://www.svgrepo.com"
           target="_blank"
           rel="noreferrer"
         >
           SVG Repo
-        </a>, <a
+        </a>
+        ,{" "}
+        <a
           className="text-muted small"
           href="https://www.netlify.com/"
           target="_blank"
           rel="noreferrer"
         >
           Netlify
-        </a>, <a
+        </a>
+        ,{" "}
+        <a
           className="text-muted small"
           href="https://coolors.co/"
           target="_blank"
@@ -58,7 +62,6 @@ export default function Resume() {
         >
           Coolers
         </a>
-        
       </p>
     </div>
   );

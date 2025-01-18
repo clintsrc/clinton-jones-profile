@@ -1,8 +1,27 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  text-align: justify;
+}
+
+body {
+  background-color: #eff8e2;
+  color: #23022e;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 1em;
+}
+
+.resume-caption {
+  color: #2e0227;
+}
+
+/* bootstrap overrides the body styling for these listitems */
+.list-group-item {
+  background-color: inherit !important; 
+  color: inherit !important;
 }
 
 .logo {
@@ -16,6 +35,26 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.navbar {
+  background-color: #CECFC7; /* Change to your desired color */
+  padding: 10px;
+}
+
+.navbar .nav-link.active {
+  background-color: inherit;
+  color: #23022E; /* You can change the text color too */
+}
+
+.navbar .nav-link:hover {
+  color: #573280;
+}
+
+.navbar-name {
+  font-weight: bold;
+  font-style: italic;
 }
 
 @keyframes logo-spin {
