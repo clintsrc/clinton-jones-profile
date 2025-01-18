@@ -9,9 +9,9 @@ body {
 }
 
 p {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  padding: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
 }
 
 .resume-caption {
@@ -20,41 +20,47 @@ p {
 
 /* bootstrap overrides the body styling for these listitems */
 .list-group-item {
-  background-color: inherit !important; 
+  background-color: inherit !important;
   color: inherit !important;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 6rem;
+  padding: 1.5rem;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2rem #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2rem #61dafbaa);
 }
-
 
 .navbar {
-  background-color: #CECFC7; /* Change to your desired color */
+  background-color: #cecfc7;
   padding: 10px;
-}
-
-.navbar .nav-link.active {
-  background-color: inherit;
-  color: #23022E; /* You can change the text color too */
-}
-
-.navbar .nav-link:hover {
-  color: #573280;
 }
 
 .navbar-name {
   font-weight: bold;
   font-style: italic;
+}
+
+/* inactive links */
+.navbar .nav-link {
+  color: #eff8e2;
+}
+
+/* active links */
+.navbar .nav-link.active {
+  background-color: inherit;
+  color: #23022e; /* You can change the text color too */
+}
+
+/* inactive links */
+.navbar .nav-link:hover {
+  color: #573280;
 }
 
 @keyframes logo-spin {
@@ -73,7 +79,7 @@ p {
 }
 
 .card {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .read-the-docs {

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <h2 className="mt-3">About me</h2>
-      
+
       <div className="mt-3">
         <img
           className="img-fluid rounded-circle"
@@ -13,7 +13,7 @@ export default function About() {
           alt="Profile Image"
         />
       </div>
-      <p>Thanks for visiting my site!</p>
+      <p className="mt-3">Thanks for visiting my site!</p>
       <p>
         I&apos;m a motivated web developer with a strong foundation in
         full-stack development, Python programming, and automation. Skilled in
