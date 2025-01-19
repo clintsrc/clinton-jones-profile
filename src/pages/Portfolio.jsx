@@ -12,20 +12,57 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/Portfolio.css";
 
 import imgNerdTrivia from "../assets/images/app-NerdTrivia.jpg";
-// import imgCJPortfolio from "../assets/images/app-cj-portfolio.jpg";
-// import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
-// import imgHR1985 from "../assets/images/app-HR1985.jpg";
-// import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
-// import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
+import imgCJPortfolio from "../assets/images/app-cj-portfolio.jpg";
+import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
+import imgHR1985 from "../assets/images/app-HR1985.jpg";
+import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
+import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
+
 
 function Portfolio() {
   
-  const projects = [
+const projects = [
     {
+      projectname: "Nerd Trivia",
       imagetile: imgNerdTrivia,
+      srcrepo: "https://github.com/clintsrc/nerd-trivia",
+      sitelocation: 'https://clintsrc.github.io/nerd-trivia/',
+      skills: "HTML, CSS, JavaScript",
     },
     {
-      imagetile: imgNerdTrivia,
+      projectname: "CJ Portfolio",
+      imagetile: imgCJPortfolio,
+      srcrepo: "https://github.com/clintsrc/clinton-jones-profile",
+      sitelocation: "https://clintonjones.netlify.app/",
+      skills: "React SPA",
+    },
+    {
+      projectname: "Weather Or Not",
+      imagetile: imgWeatherOrNot,
+      srcrepo: "https://github.com/clintsrc/WeatherOrNot",
+      sitelocation: "https://weatherornot-j0iy.onrender.com/",
+      skills: "Express.js, REST APIs",
+    },
+    {
+      projectname: "HR 1985",
+      imagetile: imgHR1985,
+      srcrepo: "https://github.com/clintsrc/HR1985",
+      sitelocation: 'https://drive.google.com/file/d/1cJHOSW0YCQAJmIs3dNgBczkvHlMfWcpE/view',
+      skills: "PostgreSQL",
+    },
+    {
+      projectname: "Otto's Autos",
+      imagetile: imgOttosAutos,
+      srcrepo: 'https://github.com/clintsrc/OttosAutos',
+      sitelocation: "https://drive.google.com/file/d/1YQLbpaQs6NQZWmPPlcUJSWEc0elTSUT1/view",
+      skills: "TypeScript, OOP",
+    },
+    {
+      projectname: "Readme Generator",
+      imagetile: imgReadmeGen,
+      srcrepo: "https://github.com/clintsrc/ReadmeGen",
+      sitelocation: 'https://drive.google.com/file/d/1LaERyMDhP6-J8q0OTHyf95QkQvJzfBkp/view',
+      skills: "Node.js",
     },
   ];
 
@@ -37,20 +74,20 @@ function Portfolio() {
         {projects.map((project, index) => (
           <div className="col-12 col-sm-6 col-md-4" key={index}>
             <div className="tile">
-              <img src={project.imagetile} alt="Nerd Trivia" className="img-fluid" />
+              <img src={project.imagetile} alt={project.projectname} className="img-fluid" />
               <div className="overlay">
                 <div className="content">
                   <h3>
                     <a
-                      href="https://clintsrc.github.io/nerd-trivia/"
+                      href={project.sitelocation}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="portfolio-link"
                     >
-                      Nerd Trivia
+                      {project.projectname}
                     </a>
                     <a
-                      href="https://github.com/clintsrc/nerd-trivia"
+                      href={project.srcrepo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="portfolio-link"
@@ -58,14 +95,12 @@ function Portfolio() {
                       <i className="bi bi-github"></i>
                     </a>
                   </h3>
-                  <div>HTML</div>
+                  <div>{project.skills}</div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-
-        
+        ))} {/* end map function */}
       </div>
     </div>
   );  // end jsx return
