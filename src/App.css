@@ -80,6 +80,23 @@ p {
 }
 
 /*
+ * Footer settings
+ *
+ */
+
+.icon {
+  background-color: inherit;
+  color: #23022e;
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.icon:hover {
+  color: #573280;
+}
+
+
+/*
  * @ Rules
  *
  */

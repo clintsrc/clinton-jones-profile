@@ -8,7 +8,9 @@ function NavTabs() {
 
   return (
     <nav className="navbar py-4">
-      <h1 className="mb-0 navbar-name">Clinton Jones &#160;&#187;&#187;&#187;</h1>
+      <h1 className="mb-0 navbar-name">
+        Clinton Jones &#160;&#187;&#187;&#187;
+      </h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
@@ -31,7 +33,6 @@ function NavTabs() {
               currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
             }
           >
-            
             <h2>Portfolio</h2>
           </Link>
         </li>
