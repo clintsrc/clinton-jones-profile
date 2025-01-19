@@ -7,20 +7,20 @@ function NavTabs() {
   console.log(`DEBUG: ${currentPage}`);
 
   return (
-    <>
-      <h4 className="mb-0 me-3">Clinton Jones</h4>
+    <nav className="navbar py-4">
+      <h1 className="mb-0 navbar-name">Clinton Jones &#160;&#187;&#187;&#187;</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
             to="/About"
             // Check to see if the currentPage is / or `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={
-              ((currentPage === "/About") || (currentPage === "/"))
+              currentPage === "/About" || currentPage === "/"
                 ? "nav-link active"
                 : "nav-link"
             }
           >
-            About me
+            <h2>About me</h2>
           </Link>
         </li>
         <li className="nav-item">
@@ -31,7 +31,8 @@ function NavTabs() {
               currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
             }
           >
-            Portfolio
+            
+            <h2>Portfolio</h2>
           </Link>
         </li>
         <li className="nav-item">
@@ -42,7 +43,7 @@ function NavTabs() {
               currentPage === "/Contact" ? "nav-link active" : "nav-link"
             }
           >
-            Contact
+            <h2>Contact</h2>
           </Link>
         </li>
         <li className="nav-item">
@@ -53,11 +54,11 @@ function NavTabs() {
               currentPage === "/Resume" ? "nav-link active" : "nav-link"
             }
           >
-            Resume
+            <h2>Resume</h2>
           </Link>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }
 

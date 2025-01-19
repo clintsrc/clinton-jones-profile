@@ -183,70 +183,78 @@ export default function Contact() {
   };
 
   return (
-    <div className>
-      <h1>Contact Page</h1>
-      <form onSubmit={handleFormSubmit}>
-        <label className="contact-label">
-          Name:
-          {errors.username && (
-            <span className="error-message">* {errors.username}</span>
-          )}
-        </label>
-        <input
-          id="username"
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleOnChange}
-          onBlur={handleOnBlur}
-          placeholder="name"
-        />
-
-        <label className="contact-label">
-          Email:
-          {errors.email && (
-            <span className="error-message">* {errors.email}</span>
-          )}
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleOnChange}
-          onBlur={handleOnBlur}
-          placeholder="email"
-        />
-
-        <label className="contact-label">
-          Message:
-          {errors.message && (
-            <span className="error-message">* {errors.message}</span>
-          )}
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleOnChange}
-          onBlur={handleOnBlur}
-          placeholder="Type your message here..."
-        />
-
-        <button type="submit">Submit</button>
-      </form>
-
-      <div className="submitted-text">
-        {submissionStatus === "error" && (
-          <div className="error-message">
-            Error! Please check the fields in the form and try again.
+    <div>
+      <h2 className="mt-3">Contact</h2>
+      <div className="container">
+        <form onSubmit={handleFormSubmit}>
+          <div className="mb-3">
+            <label htmlFor="username" className="form-label">
+              Name
+            </label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleOnChange}
+              onBlur={handleOnBlur}
+              className={`form-control ${errors.username ? "is-invalid" : ""}`}
+              placeholder="Your name"
+            />
+            {errors.username && (
+              <div className="invalid-feedback">{errors.username}</div>
+            )}
           </div>
-        )}
-        {submissionStatus === "success" && (
-          <div className="success-message">
-            Your message was submitted, I look forward to contacting you soon!
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleOnChange}
+              onBlur={handleOnBlur}
+              className={`form-control ${errors.email ? "is-invalid" : ""}`}
+              placeholder="Your email"
+            />
+            {errors.email && (
+              <div className="invalid-feedback">{errors.email}</div>
+            )}
           </div>
-        )}
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleOnChange}
+              onBlur={handleOnBlur}
+              className={`form-control ${errors.message ? "is-invalid" : ""}`}
+              placeholder="Your message"
+              rows="5"
+            ></textarea>
+            {errors.message && (
+              <div className="invalid-feedback">{errors.message}</div>
+            )}
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+          {submissionStatus === "error" && (
+            <div className="text-danger">
+              Please fix the errors above and try again.
+            </div>
+          )}
+          {submissionStatus === "success" && (
+            <div className="text-success">
+              Your message was submitted successfully!
+            </div>
+          )}
+        </form>
       </div>
     </div>
   );

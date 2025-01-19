@@ -1,22 +1,88 @@
+/*
+ * Global settings
+ *
+ */
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  text-align: justify;
+}
+
+body {
+  background-color: #eff8e2;
+  color: #23022e;
+}
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
+
+.resume-caption {
+  color: #2e0227;
+}
+
+/*
+ * Resume Page
+ *
+ */
+
+/* 
+ * Bootstrap overrides the body styling for these list items.
+ * Intentinally restore them here
+ */
+.list-group-item {
+  background-color: inherit !important;
+  color: inherit !important;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 6rem;
+  padding: 1.5rem;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2rem #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2rem #61dafbaa);
 }
+
+/*
+ * Nav bar settings
+ *
+ */
+.navbar {
+  background-color: #cecfc7;
+  padding: 10px;
+}
+
+.navbar-name {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* inactive links */
+.navbar .nav-link {
+  color: #eff8e2;
+}
+
+/* active links */
+.navbar .nav-link.active {
+  background-color: inherit;
+  color: #23022e;
+}
+
+/* inactive links */
+.navbar .nav-link:hover {
+  color: #573280;
+}
+
+/*
+ * @ Rules
+ *
+ */
 
 @keyframes logo-spin {
   from {
@@ -34,7 +100,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .read-the-docs {
