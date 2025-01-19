@@ -1,3 +1,77 @@
-img.github {
-  width: 25px;
+.tile {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  touch-action: manipulation;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* trim or zoom the image to make it a consistent size */
+  display: block;
+}
+
+/* Content inside the tile */
+/* set alignment to top left, use entire area */
+.tile .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 30px; /* push the content down closer to center */
+  padding-left: 15px; /* left side padding */
+  text-align: left;
+  color: white;
+  display: none; /* Hide content by default */
+}
+
+/* 
+ * Show content when the tile is hovered
+ * Requires a click to show for smaller devices,
+ * not sure how to resolve that
+ */
+.tile:hover .content {
+  display: block;
+}
+
+/* handle the content size and spacing */
+.content h3 {
+  font-size: 2rem; /* larger project name */
+  margin-bottom: 10px; /* space before skills text */
+  line-height: 1.2;
+}
+
+/*
+ * use color changes for the links instead of underlines
+ */
+.content h3 a {
+  text-decoration: none;
+  color: #4d3ebf; /* hover off link */
+  margin-right: 10px; /* space between project name and github logo */
+}
+
+/* hover on link */
+.content h3 a:hover {
+  color: #43c0c4; /* Change to lighter color on hover */
+}
+
+/* Icon color management */
+.content h3 a i {
+  color: #43c0c4; /* Default icon color */
+}
+
+/* Hover effect for icons */
+.content h3 a:hover i {
+  color: #ddd; /* Change to lighter icon color on hover */
+}
+
+/* skill text */
+.content div {
+  font-size: 1rem;
+  margin-top: 5px;
 }
