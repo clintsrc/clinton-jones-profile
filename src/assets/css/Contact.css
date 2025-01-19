@@ -1,73 +1,52 @@
-.contact {
-  flex: 1;
+/*
+ * Contact Form
+ *
+ */
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* styles.css */
-.contact-label {
-  font-weight: bold;
-}
 
+/*
+ * Form Styles
+ *
+ */
+ 
+/* Limit the width for readability  */
 form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0; /* optionally add 'auto' to center */
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+textarea {
+  resize: none;
 }
 
+/* 
+ * The button is the width of the form
+ * to look better on devices
+ *
+ */
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #4d9ef5;
 }
 
 
-input::placeholder,
-textarea::placeholder {
-  color: #aaa;
-  font-style: italic;
-}
-
-/* TODO */
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #3a8ee7;
-}
-
-button:active {
-  background-color: #004085;
-}
-
-.error-message {
+/*
+ * Submit status
+ *
+ */
+ 
+.text-danger {
   color: #dd0303f6;
-  font-weight: normal;
   text-align: center;
-  font-size: 1rem;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.success-message {
+.text-success {
   font-weight: bold;
   text-align: center;
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-/* Submission Messages */
-.submitted-text {
-  font-size: 2rem;
-  margin-top: 5px;
+  margin-top: 15px;
 }

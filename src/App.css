@@ -1,3 +1,7 @@
+/*
+ * Global settings
+ *
+ */
 #root {
   margin: 0 auto;
   text-align: justify;
@@ -18,7 +22,15 @@ p {
   color: #2e0227;
 }
 
-/* bootstrap overrides the body styling for these listitems */
+/*
+ * Resume Page
+ *
+ */
+
+/* 
+ * Bootstrap overrides the body styling for these list items.
+ * Intentinally restore them here
+ */
 .list-group-item {
   background-color: inherit !important;
   color: inherit !important;
@@ -37,6 +49,10 @@ p {
   filter: drop-shadow(0 0 2rem #61dafbaa);
 }
 
+/*
+ * Nav bar settings
+ *
+ */
 .navbar {
   background-color: #cecfc7;
   padding: 10px;
@@ -55,13 +71,18 @@ p {
 /* active links */
 .navbar .nav-link.active {
   background-color: inherit;
-  color: #23022e; /* You can change the text color too */
+  color: #23022e;
 }
 
 /* inactive links */
 .navbar .nav-link:hover {
   color: #573280;
 }
+
+/*
+ * @ Rules
+ *
+ */
 
 @keyframes logo-spin {
   from {
