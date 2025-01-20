@@ -1,10 +1,23 @@
+/*
+ * Contact.jsx
+ *
+ * React component for the main content to display the Contact form page.
+ *
+ * Displays a web form for a user to submit an email message
+ *
+ * The sendmail functionality itself has yet to be implemented, but the goal
+ * of the exercise is to use react and bootstrap to validate the input and provide
+ * immediate validation feedback
+ *
+ */
+
 import { useState } from "react";
 import validator from "validator";
 
 import "../assets/css/Contact.css";
 
 export default function Contact() {
-  // Set reasonable and safe lengths for field inputs
+  // Set reasonable (and safe) field input lengths
   const MAX_NAME_LEN = 50;
   const MIN_MESSAGE_LEN = 4; // A 'test' message is fine
   const MAX_MESSAGE_LEN = 500;
@@ -31,8 +44,8 @@ export default function Contact() {
    *
    * Check the given iput field for valid data
    *
-   * If an error is detected, add an error message to the error state
-   * Otherwise set an empty string to indicate the input is valid
+   * If an error is detected, add an error message to the error state. Otherwise set
+   * an empty string to indicate the input is valid
    *
    */
   const validateField = (name, value) => {
@@ -108,8 +121,7 @@ export default function Contact() {
   /*
    * handleOnChange()
    *
-   * Provides immediate feedback for invalid input on the selected
-   *    field
+   * Provides immediate feedback for invalid input on the selected field
    *
    */
   const handleOnChange = (e) => {
@@ -135,7 +147,7 @@ export default function Contact() {
       message: errors.message,
     };
 
-    // instant feedback for validation errors on the active input
+    // immediate feedback for validation errors on the active input
     updatedErrors[name] = validateField(name, value);
 
     setErrors(updatedErrors);
@@ -146,8 +158,8 @@ export default function Contact() {
    *
    * Check the given iput field for valid data
    *
-   * If an error is detected, add an error message to the error state
-   * Otherwise set an empty string to indicate the input is valid
+   * If an error is detected, add an error message to the error state. Otherwise set
+   * an empty string to indicate the input is valid
    *
    * A text field shows the status the message submission
    *
@@ -169,7 +181,12 @@ export default function Contact() {
     if (!hasErrors) {
       setSubmissionStatus("success");
 
-      // TODO: Send the email on success
+      /*
+       * NOTE: Send the email on success here. This is not the focus nor a
+       * requirement for this exercise but it may come up in a later lesson.
+       * I plan to follow up either way.
+       *
+       */
 
       // clear the input fields
       setFormData({
@@ -182,6 +199,15 @@ export default function Contact() {
     }
   };
 
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout of the contact form that provides active input
+   * validation and submit feedback. It handles mouse activity, input change
+   * and the submit button click for the validation, and uses a standard validator
+   * package to avoid hacky and error prone custom rules
+   *
+   */
   return (
     <div>
       <h2 className="mt-3">Contact</h2>

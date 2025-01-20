@@ -8,7 +8,7 @@
 /* Image styles for tile */
 .tile img {
   /* Use full width and height */
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover; /* Crop or zoom image to keep the aspect ratio */
   display: block;
@@ -37,7 +37,7 @@
   padding-top: 30px;
   padding-left: 15px;
   text-align: left;
-  color: #FC440F; /* set the default font color */
+  color: #fc440f; /* set the default font color */
   display: none; /* Hide content by initially */
 }
 
@@ -58,14 +58,14 @@
   line-height: 1.2;
 }
 
- /* 'on' hover styling */
+/* 'on' hover styling */
 .portfolio-link:hover {
   color: inherit;
 }
 
 /* 'off' hover styling */
 .portfolio-link {
-  color: #f6896a; 
+  color: #f6896a;
   text-decoration: none;
   font-weight: bold;
   margin-right: 10px; /* Space between project name and icon */

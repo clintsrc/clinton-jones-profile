@@ -2,7 +2,10 @@
  * Portfolio.jsx
  *
  * React component for the main content to display the project Portfolio page.
- * Displays a bootstrap layout of multiple project tiles with descriptiv content
+ *
+ * Displays a bootstrap layout of multiple project tiles with content that links
+ * to the project's site (or video demo), the github repository and a the focused
+ * skills
  *
  * Helpful refs:
  *  https://getbootstrap.com/docs/5.3/components/card/,

@@ -8,12 +8,11 @@
   padding-bottom: 20px;
 }
 
-
 /*
  * Form Styles
  *
  */
- 
+
 /* Limit the width for readability  */
 form {
   max-width: 600px;
@@ -33,12 +32,11 @@ button {
   width: 100%;
 }
 
-
 /*
  * Submit status
  *
  */
- 
+
 .text-danger {
   color: #dd0303f6;
   text-align: center;

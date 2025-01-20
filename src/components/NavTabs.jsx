@@ -1,11 +1,26 @@
+/*
+ * NavTabs.jsx
+ *
+ * React component for the main content to display the nav section.
+ *
+ * Displays a navigation secton for all supported component pages and manages the
+ * styling to indicate which main component page is currently being actively viewed
+ * and which are selectable
+ *
+ */
+
 import { Link, useLocation } from "react-router-dom";
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function NavTabs() {
   const currentPage = useLocation().pathname;
   console.log(`DEBUG: ${currentPage}`);
 
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout of a gravitar logo and brief text introduction
+   *
+   */
   return (
     <nav className="navbar py-4">
       <h1 className="mb-0 navbar-name">
@@ -15,7 +30,9 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/About"
-            // Check to see if the currentPage is / or `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            /* Check to see if the currentPage is / or `About`. If so use the
+             * active link class from bootstrap. Otherwise, set it to a normal
+             * nav-link */
             className={
               currentPage === "/About" || currentPage === "/"
                 ? "nav-link active"
@@ -28,7 +45,9 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/Portfolio"
-            // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            /* Check to see if the currentPage is `Portfolio`. If so use the
+             * active link class from bootstrap. Otherwise, we set it to a normal
+             * nav-link */
             className={
               currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
             }
@@ -39,7 +58,9 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/Contact"
-            // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            /* Check to see if the currentPage is `Contact`. If so use the
+             * active link class from bootstrap. Otherwise, we set it to a normal
+             * nav-link */
             className={
               currentPage === "/Contact" ? "nav-link active" : "nav-link"
             }
@@ -50,7 +71,8 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/Resume"
-            // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            /* Check to see if the currentPage is `Contact`. If so use the active 
+            link class from bootstrap. Otherwise, we set it to a normal nav-link */
             className={
               currentPage === "/Resume" ? "nav-link active" : "nav-link"
             }

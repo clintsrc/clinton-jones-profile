@@ -1,11 +1,22 @@
 /*
- * Images in src/assets must be imported to be bundled and optimized by Vite / Webpack
- *   (unlike images referenced in public/assets)
+ * Footer.jsx
+ *
+ * React component for the main content to display the Footer sectioon.
+ *
+ * Displays a footer for all supported component pages with links to relevant
+ * job candidate profile pages
+ *
  */
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Footer() {
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout of a gravitar logo and brief text introduction
+   *
+   */
   return (
     <footer className="py-3">
       <div className="container">
