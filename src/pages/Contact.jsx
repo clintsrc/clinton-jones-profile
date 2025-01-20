@@ -97,14 +97,8 @@ export default function Contact() {
   const handleOnBlur = (event) => {
     const { name, value } = event.target;
 
-    /*
-     * TODO: after a successful submit, if you go back
-          to submit another, the success message should be cleared.
-          Implment handleOnFocus for this:
-
-      // clear previous submit status
-      setSubmissionStatus("");
-   */
+    // clear previous submit status message when a form change happens
+    setSubmissionStatus("");
 
     // Update the error state for the specific field
     const updatedErrors = {
@@ -127,7 +121,7 @@ export default function Contact() {
   const handleOnChange = (e) => {
     const { name, value } = e.target;
 
-    // clear previous submit status
+    // clear previous submit status message when a form change happens
     setSubmissionStatus("");
 
     // Update the form data value for the current field
