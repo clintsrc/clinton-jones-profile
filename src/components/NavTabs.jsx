@@ -18,7 +18,9 @@ function NavTabs() {
   /*
    * JSX
    *
-   * returns a bootstrap layout of a gravitar logo and brief text introduction
+   * returns a bootstrap layout of the job candidate's name, and a tab for each 
+   * each supported component route page. It handles each tab's style and link 
+   * according to whether it is actively selected or else inactive
    *
    */
   return (

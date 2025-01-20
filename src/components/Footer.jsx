@@ -14,7 +14,9 @@ function Footer() {
   /*
    * JSX
    *
-   * returns a bootstrap layout of a gravitar logo and brief text introduction
+   * returns a bootstrap layout for the footer section which displays logos and
+   * their links to the job candidate's profile pages on popular platforms (github,
+   * linkedin, stackoverflow). It handles link highlighting on mouseover events
    *
    */
   return (
