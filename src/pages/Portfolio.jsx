@@ -4,7 +4,10 @@
  * React component for the main content to display the project Portfolio page.
  * Displays a bootstrap layout of multiple project tiles with descriptiv content
  *
- * ref: https://getbootstrap.com/docs/5.3/components/card/,
+ * Helpful refs:
+ *  https://getbootstrap.com/docs/5.3/components/card/,
+ *  https://react-bootstrap.netlify.app/docs/components/overlays/
+ *  https://icons.getbootstrap.com/?q=github
  *
  */
 
@@ -18,15 +21,13 @@ import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
 import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
 
-
 function Portfolio() {
-  
-const projects = [
+  const projects = [
     {
       projectname: "Nerd Trivia",
       imagetile: imgNerdTrivia,
       srcrepo: "https://github.com/clintsrc/nerd-trivia",
-      sitelocation: 'https://clintsrc.github.io/nerd-trivia/',
+      sitelocation: "https://clintsrc.github.io/nerd-trivia/",
       skills: "HTML, CSS, JavaScript",
     },
     {
@@ -47,34 +48,50 @@ const projects = [
       projectname: "HR 1985",
       imagetile: imgHR1985,
       srcrepo: "https://github.com/clintsrc/HR1985",
-      sitelocation: 'https://drive.google.com/file/d/1cJHOSW0YCQAJmIs3dNgBczkvHlMfWcpE/view',
+      sitelocation:
+        "https://drive.google.com/file/d/1cJHOSW0YCQAJmIs3dNgBczkvHlMfWcpE/view",
       skills: "PostgreSQL",
     },
     {
       projectname: "Otto's Autos",
       imagetile: imgOttosAutos,
-      srcrepo: 'https://github.com/clintsrc/OttosAutos',
-      sitelocation: "https://drive.google.com/file/d/1YQLbpaQs6NQZWmPPlcUJSWEc0elTSUT1/view",
+      srcrepo: "https://github.com/clintsrc/OttosAutos",
+      sitelocation:
+        "https://drive.google.com/file/d/1YQLbpaQs6NQZWmPPlcUJSWEc0elTSUT1/view",
       skills: "TypeScript, OOP",
     },
     {
       projectname: "Readme Generator",
       imagetile: imgReadmeGen,
       srcrepo: "https://github.com/clintsrc/ReadmeGen",
-      sitelocation: 'https://drive.google.com/file/d/1LaERyMDhP6-J8q0OTHyf95QkQvJzfBkp/view',
+      sitelocation:
+        "https://drive.google.com/file/d/1LaERyMDhP6-J8q0OTHyf95QkQvJzfBkp/view",
       skills: "Node.js",
     },
   ];
 
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout of multiple projects as rows and columngs in a grid.
+   * Each project content is set inside a tile. When the user hovers over a project
+   * image, reveal the following content using an overlay:
+   * - A text link to the site hosting the project (or video demo for non-web apps)
+   * - A bootstrap logo that links to theproject repository
+   * - Static text for the skills used to create the project
+   *
+   */
   return (
     <div className="container mt-5">
       <div className="row g-4">
-
-
         {projects.map((project, index) => (
           <div className="col-12 col-sm-6 col-md-4" key={index}>
             <div className="tile">
-              <img src={project.imagetile} alt={project.projectname} className="img-fluid" />
+              <img
+                src={project.imagetile}
+                alt={project.projectname}
+                className="img-fluid"
+              />
               <div className="overlay">
                 <div className="content">
                   <h3>
@@ -85,7 +102,7 @@ const projects = [
                       className="portfolio-link"
                     >
                       {project.projectname}
-                    </a>
+                    </a>{" "}
                     <a
                       href={project.srcrepo}
                       target="_blank"
@@ -95,15 +112,16 @@ const projects = [
                       <i className="bi bi-github"></i>
                     </a>
                   </h3>
-                  <div>{project.skills}</div>
+                  <div className="portfolio-skills">{project.skills}</div>
                 </div>
               </div>
             </div>
           </div>
-        ))} {/* end map function */}
+        ))}{" "}
+        {/* end map function */}
       </div>
     </div>
-  );  // end jsx return
+  ); // end jsx return
 }
 
 export default Portfolio;

@@ -1,77 +1,79 @@
+/* Container for the tiles */
 .tile {
   position: relative;
   overflow: hidden;
-  height: 200px;
-  touch-action: manipulation;
+  height: 200px; /* Set a consistent tile size */
 }
 
+/* Image styles for tile */
 .tile img {
-  width: 100%;
+  /* Use full width and height */
+  width: 100%; 
   height: 100%;
-  object-fit: cover; /* trim or zoom the image to make it a consistent size */
+  object-fit: cover; /* Crop or zoom image to keep the aspect ratio */
   display: block;
+  /* No grayscale effect initially (used for link clarity) */
+  filter: grayscale(0);
+}
+
+/* Set grayscale on hover (for link clarity) */
+.tile:hover img {
+  filter: grayscale(100%);
 }
 
 /* Content inside the tile */
-/* set alignment to top left, use entire area */
 .tile .content {
   position: absolute;
   top: 0;
   left: 0;
+  /* Use full width and height */
   width: 100%;
   height: 100%;
   display: flex;
+  /* Align to top left */
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 30px; /* push the content down closer to center */
-  padding-left: 15px; /* left side padding */
+  /* Adust the content down and left a bit */
+  padding-top: 30px;
+  padding-left: 15px;
   text-align: left;
-  color: white;
-  display: none; /* Hide content by default */
+  color: #FC440F; /* set the default font color */
+  display: none; /* Hide content by initially */
 }
 
 /* 
- * Show content when the tile is hovered
- * Requires a click to show for smaller devices,
- * not sure how to resolve that
+ * Make the tile content visible on hover 
+ * Hover doesn't work for devices, bit it 
+ * will appear on click, not sure 
+ * how to resolve this just yet
  */
 .tile:hover .content {
   display: block;
 }
 
-/* handle the content size and spacing */
+/* Project title and github icon style */
 .content h3 {
-  font-size: 2rem; /* larger project name */
-  margin-bottom: 10px; /* space before skills text */
+  font-size: 2rem;
+  margin-bottom: 10px;
   line-height: 1.2;
 }
 
-/*
- * use color changes for the links instead of underlines
- */
-.content h3 a {
+ /* 'on' hover styling */
+.portfolio-link:hover {
+  color: inherit;
+}
+
+/* 'off' hover styling */
+.portfolio-link {
+  color: #f6896a; 
   text-decoration: none;
-  color: #4d3ebf; /* hover off link */
-  margin-right: 10px; /* space between project name and github logo */
+  font-weight: bold;
+  margin-right: 10px; /* Space between project name and icon */
 }
 
-/* hover on link */
-.content h3 a:hover {
-  color: #43c0c4; /* Change to lighter color on hover */
-}
-
-/* Icon color management */
-.content h3 a i {
-  color: #43c0c4; /* Default icon color */
-}
-
-/* Hover effect for icons */
-.content h3 a:hover i {
-  color: #ddd; /* Change to lighter icon color on hover */
-}
-
-/* skill text */
-.content div {
-  font-size: 1rem;
+/* Style for static skills list */
+.portfolio-skills {
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-top: 5px;
 }
