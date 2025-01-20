@@ -1,13 +1,24 @@
 /*
- * Images in src/assets must be imported to be bundled and optimized by Vite / Webpack
- *   (unlike images referenced in public/assets)
+ * Footer.jsx
+ *
+ * React component for the main content to display the Footer sectioon.
+ *
+ * Displays a footer for all supported component pages with links to relevant
+ * job candidate profile pages
+ *
  */
 
-import imgGitHub from "../../src/assets/images/logo-github.svg";
-import imgLinkedIn from "../../src/assets/images/logo-linkedin.png";
-import imgDevTo from "../../src/assets/images/logo-dev.svg";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Footer() {
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout for the footer section which displays logos and
+   * their links to the job candidate's profile pages on popular platforms (github,
+   * linkedin, stackoverflow). It handles link highlighting on mouseover events
+   *
+   */
   return (
     <footer className="py-3">
       <div className="container">
@@ -16,40 +27,22 @@ function Footer() {
             href="https://github.com/clintsrc"
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-3"
           >
-            <img
-              className="img-fluid"
-              src={imgGitHub}
-              alt="GitHub Logo"
-              style={{ width: "40px" }}
-            />
+            <i className="icon bi bi-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/clinton-jones/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-3"
           >
-            <img
-              className="img-fluid"
-              src={imgLinkedIn}
-              alt="LinkedIn Logo"
-              style={{ width: "40px" }}
-            />
+            <i className="icon bi bi-linkedin"></i>
           </a>
           <a
-            href="https://dev.to/cajones"
-            className="mx-3"
+            href="https://www.linkedin.com/in/clinton-jones/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="img-fluid"
-              src={imgDevTo}
-              alt="Dev Logo"
-              style={{ width: "40px" }}
-            />
+            <i className="icon bi bi-stack-overflow"></i>
           </a>
         </div>
       </div>

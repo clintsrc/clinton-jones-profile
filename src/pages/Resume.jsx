@@ -1,7 +1,32 @@
-export default function Resume() {
-  const urlResume =
-    "https://docs.google.com/document/d/1Eyu1A20_3BPIj51mwFGoNbK1EBCttq3n/preview";
+/*
+ * Resume.jsx
+ *
+ * React component for the main content to display the Resume list and download page.
+ *
+ * Displays a list of front-end and back-end proficiencies along with a link
+ * to download a copy of the job candidate's resume
+ *
+ */
 
+export default function Resume() {
+  const docResume = "Clint_Jones_Resume.docx";
+  const urlResume = `../assets/docs/${docResume}`;
+
+  // use a download prompt for best practices
+  const handleDownload = (event) => {
+    const allowDownload = window.confirm(`Download ${docResume}?`);
+    if (!allowDownload) {
+      event.preventDefault();
+    }
+  };
+
+  /*
+   * JSX
+   *
+   * returns a bootstrap layout of 2 lists, one for front-end skills, another
+   * for back-end skills, and a link to download the full resume document
+   *
+   */
   return (
     <div>
       <h2 className="mt-3">Resume</h2>
@@ -23,46 +48,17 @@ export default function Resume() {
         <li className="list-group-item">Express</li>
         <li className="list-group-item">PostgreSQL</li>
       </ul>
+
       <div className="d-grid gap-2 col-3 mx-auto pt-5">
         <a
-          className="btn btn-primary"
           href={urlResume}
-          target="_blank"
-          rel="noopener noreferrer"
+          download={docResume}
+          className="btn btn-primary"
+          onClick={handleDownload}
         >
-          Download
+          Download Resume
         </a>
       </div>
-      <p>
-        {/* TODO: move to readme */}
-        Resources: Francisco Rivera,{" "}
-        <a
-          className="text-muted small"
-          href="https://www.svgrepo.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          SVG Repo
-        </a>
-        ,{" "}
-        <a
-          className="text-muted small"
-          href="https://www.netlify.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Netlify
-        </a>
-        ,{" "}
-        <a
-          className="text-muted small"
-          href="https://coolors.co/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Coolers
-        </a>
-      </p>
     </div>
   );
 }
