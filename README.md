@@ -25,7 +25,7 @@ My React online portfolio is a site where you can find my projects, their techno
 1. Run: npm run dev  
 2. Browse to the running app at: http://localhost:3000/  
 * See my active Portfolio site deployed on Netlify [here](https://clintonjones.netlify.app/)  
-![Portfolio screenshot](assets/images/app-cj-portfolio.png)
+![Portfolio screenshot](src/assets/images/app-cj-portfolio.png)
 
 ## License
 
