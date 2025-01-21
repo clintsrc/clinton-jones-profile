@@ -203,8 +203,8 @@ export default function Contact() {
    *
    */
   return (
-    <div>
-      <h2 className="mt-3">Contact</h2>
+    <>
+      <h2 className="page-title mt-3">Contact</h2>
       <div className="container">
         <form onSubmit={handleFormSubmit}>
           <div className="mb-3">
@@ -276,6 +276,6 @@ export default function Contact() {
           )}
         </form>
       </div>
-    </div>
+    </>
   );
 }

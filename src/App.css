@@ -7,9 +7,22 @@
   text-align: justify;
 }
 
+/* Coolers:
+ *    https://coolors.co/eff8e2-cecfc7-ada8b6-23022e-573280 */
+:root {
+  --primary-color: #eff8e2;
+  --secondary-color: #cecfc7;
+  --accent-color: #2e0227;
+  --dark-color: #241414;
+  --light-color: #573280;
+  /* the portfolio content links need to work for both dark and light image
+     backgrounds */
+  --content-color: #fc440f;
+  --content-light-color: #f6896a;
+}
+
 body {
-  background-color: #eff8e2;
-  color: #23022e;
+  background-color: var(--primary-color);
 }
 
 p {
@@ -19,7 +32,57 @@ p {
 }
 
 .resume-caption {
-  color: #2e0227;
+  color: var(--accent-color);
+}
+
+.page-title {
+  color: var(--accent-color);
+}
+
+/*
+ * Nav bar settings
+ *
+ */
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.navbar-name {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* inactive links */
+.navbar .nav-link {
+  color: var(--primary-color);
+}
+
+/* active links */
+.navbar .nav-link.active {
+  background-color: inherit;
+  color: var(--accent-color);
+}
+
+/* inactive links */
+.navbar .nav-link:hover {
+  color: var(--light-color);
+}
+
+/*
+ * Footer settings
+ *
+ */
+.icon {
+  background-color: inherit;
+  color: var(--accent-color);
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.icon:hover {
+  color: var(--light-color);
 }
 
 /*
@@ -31,68 +94,9 @@ p {
  * Bootstrap overrides the body styling for these list items.
  * Intentinally restore them here
  */
-.list-group-item {
+ .list-group-item {
   background-color: inherit !important;
   color: inherit !important;
-}
-
-.logo {
-  height: 6rem;
-  padding: 1.5rem;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2rem #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2rem #61dafbaa);
-}
-
-/*
- * Nav bar settings
- *
- */
-.navbar {
-  background-color: #cecfc7;
-  padding: 10px;
-}
-
-.navbar-name {
-  font-weight: bold;
-  font-style: italic;
-}
-
-/* inactive links */
-.navbar .nav-link {
-  color: #eff8e2;
-}
-
-/* active links */
-.navbar .nav-link.active {
-  background-color: inherit;
-  color: #23022e;
-}
-
-/* inactive links */
-.navbar .nav-link:hover {
-  color: #573280;
-}
-
-/*
- * Footer settings
- *
- */
-
-.icon {
-  background-color: inherit;
-  color: #23022e;
-  font-size: 3rem;
-  margin-right: 3rem;
-}
-
-.icon:hover {
-  color: #573280;
 }
 
 /*
@@ -107,18 +111,4 @@ p {
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2rem;
-}
-
-.read-the-docs {
-  color: #888;
 }
