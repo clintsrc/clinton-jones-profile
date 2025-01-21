@@ -18,7 +18,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/Portfolio.css";
 
 import imgNerdTrivia from "../assets/images/app-NerdTrivia.jpg";
-import imgCJPortfolio from "../assets/images/app-cj-portfolio.jpg";
+import imgCJPortfolio from "../assets/images/app-cj-portfolio.png";
 import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
 import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";

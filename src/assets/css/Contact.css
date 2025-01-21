@@ -36,13 +36,18 @@ button {
  * Submit status
  *
  */
+ .invalid-feedback {
+  color: var(--error-color);
+ }
 
-.text-danger {
+.text-error {
+  color: var(--error-color);
   text-align: center;
   margin-top: 15px;
 }
 
 .text-success {
+  color: var(--success-color);
   font-weight: bold;
   text-align: center;
   margin-top: 15px;

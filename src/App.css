@@ -8,21 +8,25 @@
 }
 
 /* Coolers:
- *    https://coolors.co/eff8e2-cecfc7-ada8b6-23022e-573280 */
+ *    https://coolors.co/fc440f-ebcfb2-637a91-c1a68c-203952*/
 :root {
-  --primary-color: #eff8e2;
-  --secondary-color: #cecfc7;
-  --accent-color: #2e0227;
-  --dark-color: #241414;
-  --light-color: #573280;
+  --light-color: #ebcfb2;
+  --secondary-color: #637a91;
+  --accent-color: #c1a68c;
+  --primary-color: #203952;
+  --dark-color: #2D3047;
   /* the portfolio content links need to work for both dark and light image
      backgrounds */
   --content-color: #fc440f;
   --content-light-color: #f6896a;
+  /* brighten the default error/success colors for the darker background */
+  --error-color: #f79890;
+  --success-color: #74fd05;
 }
 
 body {
   background-color: var(--primary-color);
+  color: whitesmoke;
 }
 
 p {
@@ -94,7 +98,7 @@ p {
  * Bootstrap overrides the body styling for these list items.
  * Intentinally restore them here
  */
- .list-group-item {
+.list-group-item {
   background-color: inherit !important;
   color: inherit !important;
 }

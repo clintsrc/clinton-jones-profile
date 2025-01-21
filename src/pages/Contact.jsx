@@ -265,7 +265,7 @@ export default function Contact() {
             Submit
           </button>
           {submissionStatus === "error" && (
-            <div className="text-danger">
+            <div className="text-error">
               Please fix the errors above and try again.
             </div>
           )}
