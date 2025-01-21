@@ -271,7 +271,8 @@ export default function Contact() {
           )}
           {submissionStatus === "success" && (
             <div className="text-success">
-              Your message was submitted successfully!
+              {/* Your message was submitted successfully! */}
+              Email delivery is not yet implemented. For now please send your message to clinton.alan.jones@gmail.com. Thank you!
             </div>
           )}
         </form>
