@@ -38,7 +38,7 @@ function Footer() {
             <i className="icon bi bi-linkedin"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/clinton-jones/"
+            href="https://stackoverflow.com/users/29260895/clinton-jones"
             target="_blank"
             rel="noopener noreferrer"
           >
