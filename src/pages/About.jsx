@@ -18,10 +18,10 @@ export default function About() {
    *
    */
   return (
-    <div>
-      <h2 className="mt-3">About me</h2>
+    <>
+      <h2 className="page-title mt-3">About me</h2>
 
-      <div className="row mx-auto">
+      <div className="row mx-auto mt-4">
         <div className="col-md-3">
           <img
             className="img-fluid rounded-circle"
@@ -44,6 +44,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }

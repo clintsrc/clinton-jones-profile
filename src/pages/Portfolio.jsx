@@ -18,7 +18,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/Portfolio.css";
 
 import imgNerdTrivia from "../assets/images/app-NerdTrivia.jpg";
-import imgCJPortfolio from "../assets/images/app-cj-portfolio.jpg";
+import imgCJPortfolio from "../assets/images/app-cj-portfolio.png";
 import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
 import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
@@ -85,45 +85,48 @@ function Portfolio() {
    *
    */
   return (
-    <div className="container mt-5">
-      <div className="row g-4">
-        {projects.map((project, index) => (
-          <div className="col-12 col-sm-6 col-md-4" key={index}>
-            <div className="tile">
-              <img
-                src={project.imagetile}
-                alt={project.projectname}
-                className="img-fluid"
-              />
-              <div className="overlay">
-                <div className="content">
-                  <h3>
-                    <a
-                      href={project.sitelocation}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="portfolio-link"
-                    >
-                      {project.projectname}
-                    </a>{" "}
-                    <a
-                      href={project.srcrepo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="portfolio-link"
-                    >
-                      <i className="bi bi-github"></i>
-                    </a>
-                  </h3>
-                  <div className="portfolio-skills">{project.skills}</div>
+    <>
+      <h2 className="page-title mt-3">Portfolio</h2>
+      <div className="container mt-3">
+        <div className="row g-4">
+          {projects.map((project, index) => (
+            <div className="col-12 col-sm-6 col-md-4" key={index}>
+              <div className="tile">
+                <img
+                  src={project.imagetile}
+                  alt={project.projectname}
+                  className="img-fluid"
+                />
+                <div className="overlay">
+                  <div className="content">
+                    <h3>
+                      <a
+                        href={project.sitelocation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-link"
+                      >
+                        {project.projectname}
+                      </a>
+                      <a
+                        href={project.srcrepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-link"
+                      >
+                        <i className="bi bi-github"></i>
+                      </a>
+                    </h3>
+                    <div className="portfolio-skills">{project.skills}</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}{" "}
-        {/* end map function */}
+          ))}
+          {/* end map function */}
+        </div>
       </div>
-    </div>
+    </>
   ); // end jsx return
 }
 

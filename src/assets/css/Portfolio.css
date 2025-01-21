@@ -37,7 +37,7 @@
   padding-top: 30px;
   padding-left: 15px;
   text-align: left;
-  color: #fc440f; /* set the default font color */
+  color: var(--content-color); /* set the default font color */
   display: none; /* Hide content by initially */
 }
 
@@ -65,7 +65,7 @@
 
 /* 'off' hover styling */
 .portfolio-link {
-  color: #f6896a;
+  color: var(--content-light-color);
   text-decoration: none;
   font-weight: bold;
   margin-right: 10px; /* Space between project name and icon */

@@ -29,8 +29,8 @@ export default function Resume() {
    */
   return (
     <div>
-      <h2 className="mt-3">Resume</h2>
-      <h3 className="resume-caption mt-3">Front-end Proficiencies</h3>
+      <h2 className="page-title mt-3">Resume</h2>
+      <h3 className="resume-caption mt-4">Front-end Proficiencies</h3>
       <ul className="list-group list-group-striped">
         <li className="list-group-item">HTML</li>
         <li className="list-group-item">CSS Layouts (Flexbox)</li>

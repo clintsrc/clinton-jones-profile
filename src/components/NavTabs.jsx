@@ -13,13 +13,12 @@ import { Link, useLocation } from "react-router-dom";
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
-  console.log(`DEBUG: ${currentPage}`);
 
   /*
    * JSX
    *
-   * returns a bootstrap layout of the job candidate's name, and a tab for each 
-   * each supported component route page. It handles each tab's style and link 
+   * returns a bootstrap layout of the job candidate's name, and a tab for each
+   * each supported component route page. It handles each tab's style and link
    * according to whether it is actively selected or else inactive
    *
    */
