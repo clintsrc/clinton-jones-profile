@@ -18,7 +18,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/Portfolio.css";
 
 import imgNerdTrivia from "../assets/images/app-NerdTrivia.jpg";
-import imgCJPortfolio from "../assets/images/app-cj-portfolio.png";
+import imgShark from "../assets/images/app-Shark.jpg";
 import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
 import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
@@ -34,11 +34,11 @@ function Portfolio() {
       skills: "HTML, CSS, JavaScript",
     },
     {
-      projectname: "CJ Portfolio",
-      imagetile: imgCJPortfolio,
-      srcrepo: "https://github.com/clintsrc/clinton-jones-profile",
-      sitelocation: "https://clintonjones.netlify.app/",
-      skills: "React SPA",
+      projectname: "Shark",
+      imagetile: imgShark,
+      srcrepo: "https://github.com/clintsrc/shark",
+      sitelocation: "https://shark-b07k.onrender.com/",
+      skills: "React, TypeScript",
     },
     {
       projectname: "Weather Or Not",
