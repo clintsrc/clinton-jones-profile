@@ -10,8 +10,6 @@
 
 export default function Resume() {
   const docResume = "Clint_Jones_Resume.docx";
-  //const urlResume = `../assets/docs/${docResume}`;  // this should be in public/, but then...
-  // This is even better!
   const urlResume = `https://docs.google.com/document/d/1YAlt9q9cU6XaDw-FfjtV91Te59zj0KS2/export?format=docx`;
 
   // use a download prompt for best practices
