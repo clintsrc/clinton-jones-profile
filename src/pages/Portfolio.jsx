@@ -17,9 +17,16 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/Portfolio.css";
 
+import imgCashIsKingCRM from "../assets/images/app-CashIsKingCRM.jpg";
 import imgNerdTrivia from "../assets/images/app-NerdTrivia.jpg";
+import imgBookShelter from "../assets/images/app-BookShelter.jpg";
+import imgReshelve from "../assets/images/app-Reshelve.jpg";
 import imgShark from "../assets/images/app-Shark.jpg";
 import imgWeatherOrNot from "../assets/images/app-WeatherOrNot.jpg";
+import imgInYourLane from "../assets/images/app-InYourLane.jpg";
+import imgSNAPI from "../assets/images/app-SNAPI.jpg";
+import imgSolidGuess from "../assets/images/app-SolidGuess.jpg";
+import imgOnAndOn from "../assets/images/app-OnAndOn.jpg";
 import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
 import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
@@ -27,11 +34,32 @@ import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
 function Portfolio() {
   const projects = [
     {
+      projectname: "Cash Is King CRM",
+      imagetile: imgCashIsKingCRM,
+      srcrepo: "https://github.com/clintsrc/cash-is-king-crm",
+      sitelocation: "https://cash-is-king-crm.onrender.com/",
+      skills: "MERN, GraphQL, TypeScript, Cypress Test, GitHub Actions",
+    },
+    {
       projectname: "Nerd Trivia",
       imagetile: imgNerdTrivia,
       srcrepo: "https://github.com/clintsrc/nerd-trivia",
       sitelocation: "https://clintsrc.github.io/nerd-trivia/",
       skills: "HTML, CSS, JavaScript",
+    },
+    {
+      projectname: "Book Shelter",
+      imagetile: imgBookShelter,
+      srcrepo: "https://github.com/Gavin-Scot-Stockwell/BookShelter",
+      sitelocation: "https://bookshelter.onrender.com/",
+      skills: "Node.js, Express.js, RESTful API, React, PostgreSQL, Sequelize ORM, JWT Authentication, OpenLibrary API",
+    },
+    {
+      projectname: "Reshelve",
+      imagetile: imgReshelve,
+      srcrepo: "https://github.com/clintsrc/reshelve",
+      sitelocation: "https://reshelve.onrender.com/",
+      skills: "MERN, Apollo server, GraphQL, JWT Authentication",
     },
     {
       projectname: "Shark",
@@ -46,6 +74,35 @@ function Portfolio() {
       srcrepo: "https://github.com/clintsrc/WeatherOrNot",
       sitelocation: "https://weatherornot-j0iy.onrender.com/",
       skills: "Express.js, REST APIs",
+    },
+    {
+      projectname: "In Your Lane",
+      imagetile: imgInYourLane,
+      srcrepo: "https://github.com/clintsrc/WeatherOrNot",
+      sitelocation: "https://weatherornot-j0iy.onrender.com/",
+      skills: "Express.js, REST APIs",
+    },
+    {
+      projectname: "SNAPI",
+      imagetile: imgSNAPI,
+      srcrepo: "https://github.com/clintsrc/snapi",
+      sitelocation: "https://drive.google.com/file/d/1j8teRQAiBI-6NsjRoT7JDH3OOAciz6au/view",
+      skills: "Express.js, MongoDB, Mongoose ODM.",
+    },
+    {
+      projectname: "Solid Guess",
+      imagetile: imgSolidGuess,
+      srcrepo: "https://github.com/clintsrc/solid-guess",
+      sitelocation: "https://drive.google.com/file/d/1xETFAwS45cJ-MPmlHr3GEqDM5AXR7gRr/view",
+      skills: "MERN, Cypress Test.",
+    },
+    {
+      projectname: "On And On",
+      imagetile: imgOnAndOn,
+      srcrepo: "https://github.com/clintsrc/onandon",
+      sitelocation:
+        "https://onandon.onrender.com/",
+      skills: "CI/CD, GitHub Actions, Cypress Test",
     },
     {
       projectname: "HR 1985",
