@@ -10,7 +10,7 @@
 
 export default function Resume() {
   const docResume = "Clint_Jones_Resume.docx";
-  const urlResume = `https://docs.google.com/document/d/1YAlt9q9cU6XaDw-FfjtV91Te59zj0KS2/export?format=docx`;
+  const urlResume = `https://docs.google.com/document/d/1Eyu1A20_3BPIj51mwFGoNbK1EBCttq3n/export?format=docx`;
 
   // use a download prompt for best practices
   const handleDownload = (event) => {
