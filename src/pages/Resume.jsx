@@ -50,6 +50,7 @@ export default function Resume() {
         <li className="list-group-item">MongoDB</li>
         <li className="list-group-item">Apollo</li>
         <li className="list-group-item">GraphQL</li>
+        <li className="list-group-item">Django</li>
       </ul>
 
       <h3 className="resume-caption mt-3">Programming Languages</h3>
