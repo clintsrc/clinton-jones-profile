@@ -30,6 +30,7 @@ import imgOnAndOn from "../assets/images/app-OnAndOn.jpg";
 import imgHR1985 from "../assets/images/app-HR1985.jpg";
 import imgOttosAutos from "../assets/images/app-OttosAutos.jpg";
 import imgReadmeGen from "../assets/images/app-ReadmeGen.jpg";
+import imgRoutineSaga from "../assets/images/app-RoutineSaga.jpg";
 
 function Portfolio() {
   const projects = [
@@ -127,6 +128,14 @@ function Portfolio() {
       sitelocation:
         "https://drive.google.com/file/d/1LaERyMDhP6-J8q0OTHyf95QkQvJzfBkp/view",
       skills: "Node.js",
+    },
+    {
+      projectname: "Routine Saga",
+      imagetile: imgRoutineSaga,
+      srcrepo: "https://github.com/clintsrc/routine-saga",
+      sitelocation:
+        "https://routine-saga.onrender.com",
+      skills: "Django, Python",
     },
   ];
 
